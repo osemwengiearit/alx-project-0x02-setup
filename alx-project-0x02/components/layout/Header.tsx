@@ -1,11 +1,19 @@
-import React from 'react';
+import Link from 'next/link';
 
-const Header = () => {
+export default function Header() {
   return (
-    <header className="bg-gray-900 text-white p-4">
-      <h2 className="text-xl font-semibold">ALX Project Header</h2>
+    <header className="bg-gray-800 text-white p-4">
+      <nav className="flex gap-4">
+        <Link href="/" className="hover:underline">
+          Home
+        </Link>
+        <Link href="/home" className="hover:underline">
+          Listings
+        </Link>
+        <Link href="/about" className="hover:underline">
+          About
+        </Link>
+      </nav>
     </header>
   );
-};
-
-export default Header;
+}
