@@ -1,5 +1,7 @@
 import React from 'react';
 import Button from '@/components/common/Button';
+import Header from '@/components/layout/Header';
+
 
 export default function AboutPage() {
   return (
@@ -18,3 +20,10 @@ export default function AboutPage() {
     </div>
   );
 }
+
+<>
+  <Header />
+  <main className="p-6">
+    {/* Existing content here */}
+  </main>
+</>

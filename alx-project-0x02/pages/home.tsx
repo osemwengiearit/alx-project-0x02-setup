@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Card from '@/components/common/Card';
 import PostModal from '@/components/common/PostModal';
+import Header from '@/components/layout/Header';
+
 
 type Post = {
   title: string;
@@ -43,3 +45,11 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+
+<>
+  <Header />
+  <main className="p-6">
+    {/* Existing content here */}
+  </main>
+</>
